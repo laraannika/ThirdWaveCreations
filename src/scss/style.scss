@@ -4,3 +4,14 @@
 @import "./lara/aboutus";
 @import "./lara/header";
 @import "./yasin/thisisus";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $standard-font;
+}
+
+body{
+    background-color: $light-color;
+}
