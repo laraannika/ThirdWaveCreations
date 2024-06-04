@@ -1,0 +1,34 @@
+// Projekt CSS - Hüseyin
+
+
+.projekt {
+    width: 98%;
+    aspect-ratio: 2 / 1 ;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    
+}
+
+.img-projekt img{
+    width: 100%;
+    height: 80%;
+    box-shadow: 2px 2px 2px 2px rgb(209, 131, 14);
+}
+
+.projekt p {
+    text-align: center;
+    font-style: italic;
+}
+
+.up h1 {
+    
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
