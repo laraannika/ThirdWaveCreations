@@ -1,19 +1,28 @@
 @charset "UTF-8";
 /* Stile für den Container */
-.container-cards {
-  display: flex; /* Flex-Layout für den Container */
+.container-card-all {
+  display: flex;
+  flex-direction: column;
   gap: 0.7rem; /* Abstand zwischen den Karten */
-  height: 30vh;
   width: 100%; /* Breite des Containers */
 }
-.container-cards:hover p {
-  opacity: 1; /* Volle Deckkraft bei Hover */
-  visibility: visible; /* Sichtbar bei Hover */
+
+.container-cards {
+  display: flex; /* Flex-Layout für den Container */
+  height: 40vh;
+  border: 1px solid #333333;
+}
+
+.container-cards-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40vh;
+  border: 1px solid #333333;
 }
 
 /* Stile für die Karten */
 .card {
-  width: 50%; /* Breite der Karte */
+  width: 40%; /* Breite der Karte */
   overflow: hidden; /* Überlaufenden Inhalt verbergen */
   position: relative; /* Position relativ zum Container */
 }
@@ -61,6 +70,9 @@
   display: flex;
   flex-direction: column;
   color: black;
+  width: 76%;
+  padding: 3vh 5vw;
+  text-align: center;
 }
 .card-text h2 {
   font-size: 1.5rem; /* Schriftgröße der Überschrift */
@@ -73,6 +85,27 @@
 .card-text p {
   font-size: 0.7rem; /* Schriftgröße des Textes */
   margin: 0.5rem 0;
+}
+
+@media (min-width: 501px) {
+  .card {
+    width: 35%;
+  }
+}
+@media (min-width: 801px) {
+  .card {
+    width: 30%;
+  }
+}
+@media (min-width: 1001px) {
+  .card {
+    width: 25%;
+  }
+}
+@media (min-width: 1201px) {
+  .card {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
