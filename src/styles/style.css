@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -20,25 +21,26 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.7rem; /* Abstand zwischen den Karten */
-  width: 100%; /* Breite des Containers */
+  width: 90%; /* Breite des Containers */
+  margin: 0 auto; /* Zentrieren des Containers */
 }
 
 .container-cards {
   display: flex; /* Flex-Layout für den Container */
-  height: 40vh;
+  height: 30vh;
   border: 1px solid #333333;
 }
 
 .container-cards-2 {
   display: flex;
   flex-direction: row-reverse;
-  height: 40vh;
+  height: 30vh;
   border: 1px solid #333333;
 }
 
 /* Stile für die Karten */
 .card {
-  width: 40%; /* Breite der Karte */
+  width: 60%; /* Breite der Karte */
   overflow: hidden; /* Überlaufenden Inhalt verbergen */
   position: relative; /* Position relativ zum Container */
 }
@@ -61,7 +63,8 @@ header {
 }
 .card:hover .intro {
   height: 10vh; /* Erhöhte Höhe bei Hover */
-  background-color: black; /* Hintergrundfarbe ändern bei Hover */
+  background-color: #2C2A4A; /* Hintergrundfarbe ändern bei Hover */
+  opacity: 1;
 }
 .card:hover img {
   transform: scale(1.1) rotate(-3deg); /* Bild skalieren und drehen bei Hover */
@@ -74,7 +77,8 @@ header {
   width: 100%; /* Breite des Einführungsbereichs */
   position: absolute; /* Position absolute zum Elternelement */
   bottom: 0; /* Position am unteren Rand der Karte */
-  background-color: rgba(27, 27, 27, 0.5); /* Halbtransparenter grauer Hintergrund */
+  background-color: #2C2A4A; /* Halbtransparenter grauer Hintergrund */
+  opacity: 0.7; /* Deckkraft des Hintergrunds */
   color: rgb(255, 255, 255); /* Textfarbe */
   transition: 0.7s; /* Sanfter Übergangseffekt */
   display: flex; /* Flex-Layout */
@@ -85,10 +89,38 @@ header {
 .card-text {
   display: flex;
   flex-direction: column;
-  color: black;
+  color: #333333;
   width: 76%;
-  padding: 3vh 5vw;
+  padding: 1vh 5vw;
   text-align: center;
+}
+.card-text h4 {
+  font-size: 1.2rem; /* Schriftgröße der Überschrift */
+  margin: 0.3rem 0;
+}
+.card-text p {
+  font-size: 1rem; /* Schriftgröße des Textes */
+}
+.card-text .text-p, .card-text button {
+  display: none;
+}
+.card-text button {
+  background-color: #FF8C00;
+  color: #333333;
+  border: none;
+  border-radius: 20px;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-text button:hover {
+  background-color: #1F81DD;
+}
 
 @media (min-width: 501px) {
   .card {
@@ -99,15 +131,27 @@ header {
   .card {
     width: 30%;
   }
+  .card-text .text-p {
+    display: block;
+  }
+  .container-cards, .container-cards-2 {
+    height: 40vh;
+  }
 }
-@media (min-width: 1001px) {
+@media (min-width: 1040px) {
   .card {
     width: 25%;
+  }
+  .card-text button {
+    display: block;
   }
 }
 @media (min-width: 1201px) {
   .card {
     width: 20%;
+  }
+  .container-cards, .container-cards-2 {
+    height: 50vh;
   }
 }
 
