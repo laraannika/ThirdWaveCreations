@@ -1,6 +1,18 @@
 @import "./variables/_variables.scss";
-@import "./hüseyin/footer";
-@import "./hüseyin/projects";
-@import "./lara/aboutus";
-@import "./lara/header";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $standard-font;
+}
+
+body{
+    background-color: $light-color;
+}
+
+@import "./lara/header.scss";
+@import "./lara/aboutus.scss";
+@import "./hüseyin/projects.scss";
 @import "./yasin/thisisus.scss";
+@import "./hüseyin/footer.scss";
