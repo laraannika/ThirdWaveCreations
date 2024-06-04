@@ -1,9 +1,4 @@
 @import "./variables/_variables.scss";
-@import "./hüseyin/footer.scss";
-@import "./hüseyin/projects.scss";
-@import "./lara/aboutus.scss";
-@import "./lara/header.scss";
-@import "./yasin/thisisus.scss";
 
 *{
     margin: 0;
@@ -15,3 +10,9 @@
 body{
     background-color: $light-color;
 }
+
+@import "./lara/header.scss";
+@import "./lara/aboutus.scss";
+@import "./hüseyin/projects.scss";
+@import "./yasin/thisisus.scss";
+@import "./hüseyin/footer.scss";
