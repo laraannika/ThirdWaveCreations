@@ -9,6 +9,10 @@
 
     <script src="https://kit.fontawesome.com/359b43df8b.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    
+
     <link rel="stylesheet" href="./style.css">
 
     <title>ThirdWaveCreations</title>
@@ -16,12 +20,85 @@
 
 <body>
     <header>
-
+        <img src="./assets/logo(withoutbg).png" alt="ThirdWaveCreations Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">This is us</a>
+                    <ul>
+                        <li><a href="#">Hüseyin</a></li>
+                        <li><a href="#">Yasin</a></li>
+                        <li><a href="#">Lara</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <img src="./assets/hero.jpg" alt="Hero Image">
 
-        <!-- Projekte bereich start -->
+        <dotlottie-player src="https://lottie.host/dd3fd445-fb3e-4496-a2a6-a4c5102c761f/ryO0KQDFlc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
+        <section class="about">
+            <article>
+                <h2>About us</h2>
+                <p>
+                    Welcome to ThreeWaveCreations, where passion for web development meets innovation and collaboration. We are a team of three dedicated web developers who came together to turn our shared vision into reality. Our journey began during an intensive year-long online training program at the Digital Career Institute (DCI), where our paths crossed and our individual aspirations intertwined.
+                </p>
+            </article>
+
+            <article>
+                <h3>Our story</h3>
+                <p>
+                    <span>How We Met:</span>
+                    Our story is one of serendipity and shared ambition. As we navigated the challenges and triumphs of our DCI training, we quickly realized that our skills complemented each other perfectly. Late-night coding sessions, collaborative projects, and countless hours of problem-solving fostered a deep bond and a mutual respect for each other's abilities. This connection laid the foundation for what would eventually become ThreeWaveCreations.
+                </p>
+            </article>
+
+            <article>
+                <h3>Our Vision</h3>
+                <p>
+                    <span>What we want:</span>
+                    At ThreeWaveCreations, our goal is simple: to deliver top-notch web development services that exceed our clients' expectations. We believe in the power of technology to transform businesses and enhance user experiences. Our mission is to bring your ideas to life through innovative, functional, and aesthetically pleasing websites and applications.
+                </p>
+            </article>
+
+            <article>
+                <h3>Our Commitment:</h3>
+                <ul>
+                    <li>
+                        <span>Quality:</span> We are committed to delivering high-quality work that      stands the test of time. Our attention to detail and dedication to excellence ensure that every project we undertake is executed to perfection.
+                    </li>
+                    <li>
+                        <span>Collaboration:</span> We believe in the power of teamwork, both within our team and with our clients. We work closely with you to understand your vision and bring it to life, ensuring that the final product is a true reflection of your brand and goals.
+                    </li>
+                    <li>
+                        <span>Innovation:</span> In the ever-evolving world of web development, staying ahead of the curve is crucial. We are constantly learning, adapting, and implementing the latest technologies and trends to provide cutting-edge solutions.
+                    </li>
+                    <li>
+                        <span>Customer Satisfaction:</span> Your satisfaction is our top priority. We are dedicated to providing exceptional service, maintaining open lines of communication, and ensuring that your needs and expectations are met at every stage of the project.
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Join us on our journey</h3>
+                <p>
+                    ThreeWaveCreations is more than just a web development company; it's a testament to what can be achieved when passion, talent, and collaboration come together. Whether you need a stunning new website, a complex web application, or ongoing support and maintenance, we are here to help.
+                </p>
+
+                <p>
+                    Thank you for considering ThreeWaveCreations for your web development needs. We look forward to working with you and helping you achieve your digital goals.
+                </p>
+
+                <p><span>Contact us today and let's create something amazing together!</span></p>
+            </article>
+        </section>
+
+      <!-- Projekte bereich start -->
         <div class="projekt">
             <div class="img-projekt">
                 <img src="" />
@@ -39,7 +116,6 @@
                 <img src="" />
             </div>
         </div>
-
         <!-- Projekte bereich end -->
     </main>
 
