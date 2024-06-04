@@ -7,6 +7,81 @@
 
 body {
   background-color: #CEE5F2;
+  
+/* Stile für den Container */
+.container-cards {
+  display: flex; /* Flex-Layout für den Container */
+  gap: 0.7rem; /* Abstand zwischen den Karten */
+  height: 30vh;
+  width: 100%; /* Breite des Containers */
+}
+.container-cards:hover p {
+  opacity: 1; /* Volle Deckkraft bei Hover */
+  visibility: visible; /* Sichtbar bei Hover */
+}
+
+/* Stile für die Karten */
+.card {
+  width: 50%; /* Breite der Karte */
+  overflow: hidden; /* Überlaufenden Inhalt verbergen */
+  position: relative; /* Position relativ zum Container */
+}
+.card a {
+  text-decoration: none;
+}
+.card a h2 {
+  color: white;
+  text-align: center;
+  font-size: 1rem; /* Schriftgröße der Überschrift */
+}
+.card img {
+  height: 100%; /* Höhe des Bildes */
+  width: 100%; /* Breite des Bildes */
+  transition: 0.7s; /* Sanfter Übergangseffekt */
+  filter: grayscale(80%);
+}
+.card:hover {
+  cursor: pointer; /* Mauszeiger ändern bei Hover */
+}
+.card:hover .intro {
+  height: 10vh; /* Erhöhte Höhe bei Hover */
+  background-color: black; /* Hintergrundfarbe ändern bei Hover */
+}
+.card:hover img {
+  transform: scale(1.1) rotate(-3deg); /* Bild skalieren und drehen bei Hover */
+  filter: grayscale(0%); /* Farbeffekt aufheben bei Hover */
+}
+
+/* Stile für den Einführungsbereich innerhalb der Karten */
+.intro {
+  height: 6vh; /* Höhe des Einführungsbereichs */
+  width: 100%; /* Breite des Einführungsbereichs */
+  position: absolute; /* Position absolute zum Elternelement */
+  bottom: 0; /* Position am unteren Rand der Karte */
+  background-color: rgba(27, 27, 27, 0.5); /* Halbtransparenter grauer Hintergrund */
+  color: rgb(255, 255, 255); /* Textfarbe */
+  transition: 0.7s; /* Sanfter Übergangseffekt */
+  display: flex; /* Flex-Layout */
+  justify-content: center; /* Vertikal zentrieren */
+  align-items: center; /* Horizontal zentrieren */
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.card-text h2 {
+  font-size: 1.5rem; /* Schriftgröße der Überschrift */
+  margin: 0;
+}
+.card-text h4 {
+  font-size: 0.8rem; /* Schriftgröße der Überschrift */
+  margin: 0.3rem 0;
+}
+.card-text p {
+  font-size: 0.7rem; /* Schriftgröße des Textes */
+  margin: 0.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
