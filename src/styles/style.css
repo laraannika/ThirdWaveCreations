@@ -1,4 +1,13 @@
-@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #CEE5F2;
+  
 /* Stile für den Container */
 .container-cards {
   display: flex; /* Flex-Layout für den Container */
