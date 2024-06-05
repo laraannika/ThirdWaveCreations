@@ -333,7 +333,6 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   gap: 1rem;
   margin: 1rem;
   width: 100%;
-  background-color: antiquewhite;
 }
 
 .contact-row {
