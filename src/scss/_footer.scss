@@ -11,19 +11,16 @@
     align-items: center;
     gap: 1rem;
     margin: 1rem;
-    width: auto;
-    height: auto;
+    width: 100%;
+    background-color: antiquewhite;
 }
 
 .contact-row {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-
-
 }
 
-.yourname {}
 
 input[type="text"] {
     width: 100%;
@@ -38,16 +35,6 @@ input[type="email"] {
     border-radius: 5px;
     background-color: transparent;
 }
-
-// input[type="submit"] {
-//     width: 100%;
-//     border: 1px solid rgb(241, 132, 7);
-//     border-radius: 5px;
-//     background-color: rgb(241, 132, 7);
-//     color: white;
-//     font-weight: bold;
-//     cursor: pointer;
-// }
 
 textarea {
     width: 100%;
@@ -113,3 +100,8 @@ button {
 
 }
 
+footer p {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+}
