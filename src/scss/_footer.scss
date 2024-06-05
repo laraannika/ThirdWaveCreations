@@ -1,0 +1,111 @@
+
+
+.footer-text2 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.contact {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+
+}
+
+.yourname {
+   
+   
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid rgb(241, 132, 7);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input[type="email"] {
+    width: 100%;
+    border: 1px solid rgb(241, 132, 7);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+// input[type="submit"] {
+//     width: 100%;
+//     border: 1px solid rgb(241, 132, 7);
+//     border-radius: 5px;
+//     background-color: rgb(241, 132, 7);
+//     color: white;
+//     font-weight: bold;
+//     cursor: pointer;
+// }
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(241, 132, 7);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.subject {
+    width: 34.5%;
+}
+
+.Message {
+    width: 34.5%;
+    
+}
+
+button {
+    width: 100%;
+    border: 1px solid rgb(241, 132, 7);
+    border-radius: 15px;
+    background-color: rgb(241, 132, 7);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+// social media
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+.circle-buttons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(241, 132, 7);
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+    cursor: pointer;
+
+:first-child {
+    border-radius: 50%;
+    background-color: rgb(241, 132, 7);
+
+}
+}
