@@ -101,7 +101,7 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   width: 98%;
   aspect-ratio: 2/1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
   margin: 0.5rem;
@@ -127,6 +127,11 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   text-transform: uppercase;
 }
 
+@media (min-width: 1250px) {
+  .projekt {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* Stile für den Container */
 .container-card-all {
   display: flex;
