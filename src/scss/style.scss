@@ -12,6 +12,11 @@ body{
     background-color: $light-color;
 }
 
+h2:not(:is(.not)){
+    text-align: center;
+    font: size $standard-h2;
+}
+
 @import "./header";
 @import "./aboutus";
 @import "./projects";
