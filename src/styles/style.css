@@ -97,6 +97,26 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   fill: rgb(206, 229, 242);
 }
 
+.outerabout {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+}
+
+.lottie {
+  grid-area: 1/1/2/3;
+  width: 400px;
+  aspect-ratio: 1/1;
+}
+
+.about:first-of-type {
+  grid-area: 1/1/2/2;
+}
+.about:last-of-type {
+  grid-area: 1/2/2/3;
+}
+
 .projekt {
   width: 98%;
   aspect-ratio: 2/1;
