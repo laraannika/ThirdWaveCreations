@@ -154,8 +154,7 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 0.5rem auto;
 }
 
 .img-projekt img {
@@ -173,6 +172,14 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   font-style: italic;
 }
 
+@media screen and (min-width: 1000px) {
+  .img-projekt:hover:first-of-type img, .img-projekt:hover:nth-of-type(4) img {
+    transform: scale(1.5) translate(30%, 0);
+  }
+  .img-projekt:hover:nth-of-type(2) img, .img-projekt:hover:nth-of-type(5) img {
+    transform: scale(1.5) translate(30%, 0);
+  }
+}
 /* Stile für den Container */
 .container-card-all {
   display: flex;
