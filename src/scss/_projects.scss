@@ -3,56 +3,80 @@
 
 .projekt {
     width: 90%;
-    aspect-ratio: 2 / 1 ;    
+    aspect-ratio: 2 / 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     margin: 0.5rem auto;
     // padding: 1rem;
-    
+
 }
 
-.img-projekt{
+.img-projekt {
 
-    img{
+    img {
         width: 100%;
         aspect-ratio: 2/1;
         box-shadow: 2px 2px 2px 2px rgb(209, 131, 14);
+        transition: transform 0.5s;
     }
 
     &:hover:first-of-type,
-    &:hover:nth-of-type(4){
+    &:hover:nth-of-type(4) {
 
-        img{
+        img {
             transform: scale(2.5) translate(30%, 0);
-            transition: transform 0.5s;
         }
     }
 
+    &:hover:first-of-type(2),
+    &:hover:nth-of-type(5) {
+
+        img {
+            transform: scale(2.5) translate(0, 0);
+        }
+    }
+
+    &:hover:nth-of-type(3),
+    &:hover:last-of-type {
+
+        img {
+            transform: scale(2.5) translate(30%, 0);
+        }
+    }
 
 }
+
 .projekt p {
     text-align: center;
     font-style: italic;
 }
 
 @media screen and (min-width: 1000px) {
-    .img-projekt{
+    .img-projekt {
 
         &:hover:first-of-type,
-        &:hover:nth-of-type(4){
-            
-            img{
-                transform: scale(1.5) translate(30%,0);
+        &:hover:nth-of-type(4) {
+
+            img {
+                transform: scale(1.5) translate(30%, 0);
             }
         }
 
         &:hover:nth-of-type(2),
-        &:hover:nth-of-type(5){
-            
-            img{
-                transform: scale(1.5) translate(30%,0);
+        &:hover:nth-of-type(5) {
+
+            img {
+                transform: scale(1.5) translate(0,0);
+            }
+        }
+
+        &:hover:nth-of-type(3),
+        &:hover:last-of-type {
+
+            img {
+                transform: scale(1.5) translate(-30%, 0);
             }
         }
     }
