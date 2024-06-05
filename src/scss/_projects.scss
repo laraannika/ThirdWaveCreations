@@ -8,8 +8,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 0.5rem auto;
+    // padding: 1rem;
     
 }
 
@@ -29,8 +29,31 @@
             transition: transform 0.5s;
         }
     }
+
+
 }
 .projekt p {
     text-align: center;
     font-style: italic;
+}
+
+@media screen and (min-width: 1000px) {
+    .img-projekt{
+
+        &:hover:first-of-type,
+        &:hover:nth-of-type(4){
+            
+            img{
+                transform: scale(1.5) translate(30%,0);
+            }
+        }
+
+        &:hover:nth-of-type(2),
+        &:hover:nth-of-type(5){
+            
+            img{
+                transform: scale(1.5) translate(30%,0);
+            }
+        }
+    }
 }
