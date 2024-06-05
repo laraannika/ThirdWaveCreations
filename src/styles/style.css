@@ -13,6 +13,7 @@ body {
 
 header {
   width: 100%;
+  height: 10vh;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -22,8 +23,9 @@ header {
   z-index: 1;
 }
 header img {
-  width: 20%;
+  width: 18%;
   margin-left: 2%;
+  margin-top: 1%;
   border-radius: 50%;
 }
 header nav {

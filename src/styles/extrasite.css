@@ -1,6 +1,7 @@
 @charset "UTF-8";
 header {
   width: 100%;
+  height: 10vh;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -10,8 +11,9 @@ header {
   z-index: 1;
 }
 header img {
-  width: 20%;
+  width: 18%;
   margin-left: 2%;
+  margin-top: 1%;
   border-radius: 50%;
 }
 header nav {
@@ -99,8 +101,8 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
   align-items: center;
   gap: 1rem;
   margin: 1rem;
-  width: auto;
-  height: auto;
+  width: 100%;
+  background-color: antiquewhite;
 }
 
 .contact-row {
@@ -228,6 +230,12 @@ i:nth-child(7) {
   aspect-ratio: 1/1;
   text-align: center;
   align-content: center;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
 }
 
 * {
