@@ -92,6 +92,11 @@
     .text-p, button {
         display: none;
     }
+    a {
+            color: $text-color;
+            text-decoration: none;
+        
+        }
     button {
         background-color: $highlight-color;
         color: $text-color;
@@ -105,6 +110,7 @@
         font-size: $standard-font-size;
         cursor: pointer;
         transition: 0.3s;
+        
         &:hover {
             background-color: $logo-color;
         }
