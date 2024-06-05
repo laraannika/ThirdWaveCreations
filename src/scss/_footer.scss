@@ -78,7 +78,7 @@ button {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     cursor: pointer;
     color: blue;
@@ -90,7 +90,7 @@ button {
     i:nth-child(#{$i}) {
 
         border-radius: 50%;
-        border: 2px solid rgb(11, 26, 236);
+        border: 2px solid rgb(243, 148, 6);
         width: 50px;
         aspect-ratio: 1 / 1;
         text-align: center;
