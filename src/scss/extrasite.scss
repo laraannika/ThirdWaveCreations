@@ -3,12 +3,17 @@
 @import"./footer";
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $standard-font;
+    color: $text-color;
 }
 
+body{
+    background-color: $light-color;
+}
 .section {
     background-color: $light-color;
 }

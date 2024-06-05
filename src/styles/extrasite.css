@@ -234,6 +234,12 @@ i:nth-child(7) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  color: #333333;
+}
+
+body {
+  background-color: rgb(206, 229, 242);
 }
 
 .section {
