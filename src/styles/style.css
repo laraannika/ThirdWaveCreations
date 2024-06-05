@@ -149,28 +149,42 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
 }
 .projekt {
   width: 90%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 2/1.3;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
   margin: 0.5rem auto;
 }
 
-.img-projekt img {
+.img-projekt {
   width: 100%;
-  aspect-ratio: 2/1;
+  height: 100%;
+  overflow: hidden;
+}
+.img-projekt img {
+  width: 98%;
+  aspect-ratio: 2/1.3;
   box-shadow: 2px 2px 2px 2px rgb(209, 131, 14);
   transition: transform 0.5s;
+}
+.img-projekt:hover:first-of-type, .img-projekt:hover:nth-of-type(4) {
+  overflow: visible;
 }
 .img-projekt:hover:first-of-type img, .img-projekt:hover:nth-of-type(4) img {
   transform: scale(2.5) translate(30%, 0);
 }
-.img-projekt:hover:first-of-type(2) img, .img-projekt:hover:nth-of-type(5) img {
+.img-projekt:hover:nth-of-type(2), .img-projekt:hover:nth-of-type(5) {
+  overflow: visible;
+}
+.img-projekt:hover:nth-of-type(2) img, .img-projekt:hover:nth-of-type(5) img {
   transform: scale(2.5) translate(0, 0);
 }
+.img-projekt:hover:nth-of-type(3), .img-projekt:hover:last-of-type {
+  overflow: visible;
+}
 .img-projekt:hover:nth-of-type(3) img, .img-projekt:hover:last-of-type img {
-  transform: scale(2.5) translate(30%, 0);
+  transform: scale(2.5) translate(-30%, 0);
 }
 
 .projekt p {
