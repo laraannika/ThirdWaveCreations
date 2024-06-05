@@ -1,4 +1,4 @@
-@import "./variables/_variables.scss";
+@import "./variables";
 
 *{
     margin: 0;
@@ -12,7 +12,7 @@ body{
 }
 
 @import "./header";
-@import "./lara/aboutus.scss";
-@import "./huseyin/projects";
-@import "./yasin/thisisus.scss";
-@import "./huseyin/footer.scss";
+@import "./aboutus";
+@import "./projects";
+@import "./thisisus";
+@import "./footer";
