@@ -15,15 +15,59 @@ header{
     }
 
     nav{
-        
+        margin-right: 2%;
+
         ul{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            list-style: none;
+           
 
-            li>ul{
-                // display: flex;
-                // flex-direction: column;
-                display: none;
+            li{
+                margin: 0 1rem;
+
+                a{
+                    text-decoration: none;
+                    color: $logo-color;
+                    font-size: $standard-h4;
+                    transition: 0.5s;
+                    word-spacing: -0.4rem;
+
+                    &:hover{
+                        color: $highlight-color;
+                    }
+                }
+
+                ul{
+                    display: none; 
+                }
+
+                &:nth-of-type(4){
+
+                    &::after{
+                        position: absolute;
+                        content: " ▶";
+                        color: $logo-color;
+                        display: inline-block;
+                        margin: 0.1rem 0.5rem;
+                    }
+
+                    &:hover::after,
+                    &:focus::after{
+                        color: $highlight-color;
+                        content:" ▼";
+                    }
+
+                    &:hover>ul, 
+                    &:focus>ul{
+                        display: flex;
+                        flex-direction: column;
+                        position:absolute;
+                        background-color: $light-color;
+                        padding: 0.5rem;
+                    }
+                }
             }
         }
     }
