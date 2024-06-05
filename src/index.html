@@ -21,19 +21,20 @@
     <title>ThirdWaveCreations</title>
 </head>
 
-<body>
+<body id="top">
     <header>
         <img src="./assets/logo(withoutbg).png" alt="ThirdWaveCreations Logo">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Our Projects</a></li>
-                <li><a href="#">This is us</a>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#projects">Our Projects</a></li>
+                <li><a href="#us">This is us</a>
                     <ul>
-                        <li><a href="#">Hüseyin</a></li>
-                        <li><a href="#">Yasin</a></li>
-                        <li><a href="#">Lara</a></li>
+                        
+                        <li><a href="./html/yasin.html">Yasin</a></li>
+                        <li><a href="./html/lara.html">Lara</a></li>
+                        <li><a href="./html/huseyin.html">Hüseyin</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,10 +44,10 @@
     <main>
         <div class="hero">
             <div class="custom-shape-divider-bottom-1717507500">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg  id="about" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,20 // border: 1px solid red;3,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
                         opacity=".25" class="shape-fill"></path>
                     <path
                         d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
@@ -60,9 +61,9 @@
         <div class="afterhero"></div>
         <!-- <img class="hero" src="./assets/waveshero.png" alt="Hero Image"> -->
       
-            <section class="about">
+            <section class="about" >
                 <article>
-                    <h2>About us</h2>
+                    <h2 class="not">About us</h2>
                     <p>
                         Welcome to ThreeWaveCreations, where passion for web development meets innovation and collaboration.
                         We are a team of three dedicated web developers who came together to turn our shared vision into
@@ -136,17 +137,16 @@
                         working with you and helping you achieve your digital goals.
                     </p>
 
-                    <p><span>Contact us today and let's create something amazing together!</span></p>
+                    <p id="projects"><span>Contact us today and let's create something amazing together!</span></p>
                 </article>
             </section>
 
         <!-- Projekte bereich start -->
         <div class="up">
-            <h1>Our Projects</h1>
+            <h2>Our Projects</h2>
         </div>
 
         <div class="projekt">
-
 
             <div class="img-projekt">
                 <img src="./assets/mockup.gif" />
@@ -172,7 +172,7 @@
                 <img src="./assets/mockup.png" />
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="img-projekt">
+            <div class="img-projekt" id="us">
                 <img src="./assets/mockup.png" />
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
@@ -181,6 +181,7 @@
         <!-- Projekte bereich end -->
 
         <!-- Cards Begin -->
+        <h2>This is us</h2>
         <div class="container-card-all">
             <!-- Cards Part 1 mit Yasin -->
             <div class="container-cards">
