@@ -1,0 +1,23 @@
+.outerabout{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.lottie{
+    grid-area: 1/1/2/3;
+    width: 400px;
+    aspect-ratio: 1/1;
+}
+
+.about{
+
+    &:first-of-type{
+        grid-area: 1/1/2/2;
+    }
+
+    &:last-of-type{
+        grid-area: 1/2/2/3;
+    }
+}
