@@ -240,6 +240,10 @@ header nav ul li:nth-of-type(4):hover > ul, header nav ul li:nth-of-type(4):focu
 .card-text .text-p, .card-text button {
   display: none;
 }
+.card-text a {
+  color: #333333;
+  text-decoration: none;
+}
 .card-text button {
   background-color: #FF8C00;
   color: #333333;
