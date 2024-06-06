@@ -11,9 +11,12 @@ body {
   background-color: rgb(206, 229, 242);
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
 h2:not(:is(.not)) {
   text-align: center;
-  font: size 1.8rem;
 }
 
 header {

@@ -12,9 +12,12 @@ body{
     background-color: $light-color;
 }
 
+h2{
+    font-size: $standard-h1;
+}
+
 h2:not(:is(.not)){
     text-align: center;
-    font: size $standard-h1;
 }
 
 @import "./header";
