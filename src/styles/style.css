@@ -9,6 +9,7 @@
 
 body {
   background-color: rgb(206, 229, 242);
+  overflow-x: hidden;
 }
 
 h2 {
