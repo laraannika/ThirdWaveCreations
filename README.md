@@ -55,6 +55,8 @@ After that, now you distribute the tasks.
 
 ## Start with coding ## 
 
+Create a own branch and work **only** on your own branch.
+
 Now, commit and push your code to your GitHub account. Solve the conflicts and Merge it!
 
 Share it with your colleagues.
