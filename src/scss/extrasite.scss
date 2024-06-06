@@ -93,6 +93,7 @@ body{
 }
 .image img{
     width: 80%;
+    aspect-ratio: 1 / 1;
     border: 2 px solid $dark-color;
     border-radius: 50%;
     object-fit: cover;

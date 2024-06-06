@@ -57,13 +57,19 @@ textarea {
 }
 
 button {
+    background-color: $highlight-color;
+    color: $text-color;
+    border: none;
+    border-radius: 20px;
     width: 100%;
-    border: 1px solid rgb(241, 132, 7);
-    border-radius: 15px;
-    background-color: rgb(241, 132, 7);
-    color: white;
-    padding: 5px;
+    padding: 10px;
+    font-size: $standard-font-size;
     cursor: pointer;
+    transition: 0.3s;
+    
+    &:hover {
+        background-color: $logo-color;
+    }
 }
 
 // social media
@@ -86,22 +92,25 @@ button {
     justify-content: center;
     gap: 1rem;
     cursor: pointer;
-    color: blue;
-
-
 }
 
 @for $i from 1 through 7 {
     i:nth-child(#{$i}) {
 
         border-radius: 50%;
-        border: 2px solid rgb(243, 148, 6);
+        border: 2px solid $logo-color;
         width: 50px;
         aspect-ratio: 1 / 1;
         text-align: center;
         align-content: center;
-    }
 
+        &:hover {
+            background-color: $highlight-color;
+            border-color: $highlight-color;
+            color: white;
+            box-shadow: 0 0 10px $logo-color;
+        }
+    }
 }
 
 footer p {
